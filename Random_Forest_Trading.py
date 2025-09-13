@@ -8,9 +8,7 @@ import xgboost as xgb
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import mean_squared_error, r2_score, accuracy_score, classification_report
 from sklearn.model_selection import GridSearchCV, TimeSeriesSplit
-import warnings
 
-warnings.filterwarnings('ignore')
 
 #These stocks were selected randomly
 stock_tickers = ['AAPL','GOOGL','CNC','TSLA','JNJ','ADM','SYY','CAT','MRK','AAL','ORCL','INGM','GD'
@@ -282,4 +280,5 @@ for ticker in stock_tickers:
 
     for feature, importance in zip(X.columns, feature_importances):
         print(f"{feature}: {importance:.4f}")
+
 
