@@ -54,3 +54,7 @@ Step 7: Model Evaluation
 
 There are many different metrics to look at, but we chose OOB score, accuracy, MDI score,
 and simply model returns to gauge how well the model performs. 
+
+Remark: I wasn't sure where to mention this, but selection of the stocks used was done by
+ranking their lag-1 autocorrelation scores and taking any stock with a score below -.1. 
+
